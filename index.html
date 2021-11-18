@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@900&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <title>TahsanQR - Homepage </title>
     <style>
+
+      body {
+        background-color: rgb(116, 120, 130);
+      }
       .navbar {
         overflow: hidden;
         background-color: #333;
-      position: absolute;
-      left: 500px;
+        margin-top: 25px;
+ margin-bottom: 25px;
+width: 100%;
+
+
       }
 
       .navbar a {
@@ -18,6 +28,8 @@
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
+        width: 28%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+ text-align: center;
       }
 
       .dropdown {
@@ -37,7 +49,8 @@
       }
 
       .navbar a:hover, .dropdown:hover .dropbtn {
-        background-color: red;
+        background-color: rgb(50, 64, 97);
+
       }
 
       .dropdown-content {
@@ -65,30 +78,106 @@
       .dropdown:hover .dropdown-content {
         display: block;
       }
+
+      h1 {
+        text-align: center;
+        font-family: "Outfit", sans-serif;
+        font-size: 50px;
+      }
+
+      h2 {
+        text-align: center;
+        font-family: "Outfit", sans-serif;
+        font-size: 35px;
+      }
+
+      h4 {
+        font-family: Verdana;
+        text-align: center;
+        font-size: 25px;
+        color: white;
+      }
+
+      p {
+        font-family: Times New Roman;
+        text-align: center;
+        font-size: 15px;
+        color: white;
+      }
+
+      .para-boxes {
+        border: solid 10px rgb(35, 54, 102);
+        background-color: rgb(50, 64, 97);
+      }
+
+      #qaia {
+        position: relative;
+        top: 20px;
+      }
+
+      #hcqraind {
+        position: relative;
+        top: 40px;
+      }
+
+      #gos {
+        position: relative;
+        top: 60px;
+      }
 </style>
   </head>
   <body>
     <!-- This will be for the general navigation bar with links -->
     <div class="navbar">
     <a href="index.html">Homepage</a>
+
     <div class="dropdown">
       <button class="dropbtn">Subtopics
         <i class="fa fa-caret-down"></i>
       </button>
+
       <div class="dropdown-content">
         <a href="quantumphys.html">Quantum Physics</a>
         <a href="ai.html">Artificial Intelligence </a>
         <a href="roboeng.html">Robotics Engineering </a>
         <a href="mathpcs.html">Mathematical Physics and Computation</a>
       </div>
+
     </div>
+
     <a href="appqr.html"> Applications </a>
     <a href = "references.html"> References </a>
+
   </div>
 
 <div class = "title-box">
-<h1> TahsanQR -- Quantum Robotics </h1>
-<h2> Homepage </h2>
+<h1> TahsanQR -- Quantum Robotics &#129302; </h1>
+<h2> <u> Homepage </u> </h2>
   </div>
+
+<div class = "para-boxes">
+  <h4> <i> What Are Quantum Robots? </i> </h4>
+  <p> Quantum robotics is an emerging field in the modern day world of technology. It is highly useful, because of quantum computations and how they differ from regular computation. Normal computers all perform algorithms at the same speed; algorithm speed can be adjusted with more efficient mathematical theorems. However, quantum computers perform algorithms at faster speeds; this happens because of some aspect of quantum mechanics. Richard Feynman, a famous physicist, has an article with a main idea that predicts that when electronic components begin to become microscopic, quantum effects will occur that will be useful in designing more powerful computers (Feynman, 1981). Additionally, quantum robots use these microscopic electronics to improve their decision making.
+</p>
+</div>
+
+<div class = "para-boxes" id = "qaia">
+<h4> <i> What Makes Quantum Robots Special? </i> </h4>
+<p> Quantum robots are trained with quantum artificial intelligence algorithms. Quantum artificial intelligence algorithms are utilized to perform many tasks that seem simple to humans, but technically, it is a major progression. Quantum reinforcement learning algorithms, faster algorithms that make decisions without high quality data, assist with robotic movement; robots can navigate a room because they do not need furnished data, and quantum sensors can detect the heat energy coming off of the obstacles in the room. For these few reasons, quantum robotics are believed to have the potential to tackle the challenges of natural disasters.
+</p>
+</div>
+
+<div class = "para-boxes" id = "hcqraind">
+<h4> <i> How Can Quantum Robots Aid In Natural Disasters? </i> </h4>
+<p> The quantum robot can, theoretically, avoid the force of the disaster and assist with protecting citizens from harm. This proof is supported through quantum entanglement and new quantum materials. Quantum entanglement states that particles that are entangled, no matter the distance, can be summoned to each other. This means that stronger materials, such as newfound quantum materials with resilient properties, can be summoned to avoid the dangers. This exhilarates many to study quantum mechanics, mathematical physics, robotics engineering, and computer science due to this possibility.
+</p>
+</div>
+
+<div class = "para-boxes" id = "gos">
+<h4> <i> Goals of This Study </i> </h4>
+<p> Although it sounds outlandish, the engineers and physicists of the world believe that quantum robots can save lives in the future, if developed properly. Even now, quantum robots are being used to carry objects up staircases for people who are physically unable to. Through this independent study, the phenomenon of quantum mechanics, computer science, mathematical physics, and engineering will be explored, as well as the life changing applications of a quantum robot.
+<p>
+</div>
+
   </body>
 </html>
