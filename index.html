@@ -4,65 +4,88 @@
     <meta charset="utf-8">
     <title>TahsanQR - Homepage </title>
     <style>
-.dropbtn {
-  background-color: rgb(230, 232, 242);
-  color: rgb(32, 49, 145);
-  font-family: Verdana;
-  padding: 16px;
-  font-size: 16px;
-  border: 1px solid black;
-}
+      .navbar {
+        overflow: hidden;
+        background-color: #333;
+      position: absolute;
+      left: 500px;
+      }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
+      .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
+      .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+      }
 
-.dropdown-content a:hover {background-color: #ddd;}
+      .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: red;
+      }
 
-.dropdown:hover .dropdown-content {display: block;}
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
 
-.dropdown:hover .dropbtn {background-color: rgb(174, 175, 181);}
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
 
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
 
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
 </style>
   </head>
   <body>
     <!-- This will be for the general navigation bar with links -->
-  <div class = "nav-bar">
-
-    <div class="dropdown1">
-      <button class="dropbtn">Subtopics</button>
-
+    <div class="navbar">
+    <a href="index.html">Homepage</a>
+    <div class="dropdown">
+      <button class="dropbtn">Subtopics
+        <i class="fa fa-caret-down"></i>
+      </button>
       <div class="dropdown-content">
         <a href="quantumphys.html">Quantum Physics</a>
-        <a href="ai.html">Artificial Intelligence</a>
-        <a href="roboeng.html">Robotics Engineering</a>
-        <a href="mathpcs.html">Mathematical Physics and Computation </a>
+        <a href="ai.html">Artificial Intelligence </a>
+        <a href="roboeng.html">Robotics Engineering </a>
+        <a href="mathpcs.html">Mathematical Physics and Computation</a>
       </div>
-
     </div>
-
-    <div class="application-box">
-  <a href = "appqr.html"> Applications </a>
-    </div>
+    <a href="appqr.html"> Applications </a>
+    <a href = "references.html"> References </a>
   </div>
+
 <div class = "title-box">
 <h1> TahsanQR -- Quantum Robotics </h1>
 <h2> Homepage </h2>
