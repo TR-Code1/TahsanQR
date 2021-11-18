@@ -10,6 +10,7 @@
 
       body {
         background-color: rgb(116, 120, 130);
+        margin: 0px;
       }
       .navbar {
         overflow: hidden;
@@ -126,7 +127,24 @@ width: 100%;
         position: relative;
         top: 60px;
       }
+
+      .robot {
+        position: relative;
+        animation-name: robomove;
+        animation-duration: 2s;
+        animation-direction: reverse;
+        animation-iteration-count: infinite;
+
+      }
+      @keyframes robomove {
+        0%   { right:0px; top:0px;}
+        25%  {left:200px; top:0px;}
+        50%  { left:200px; top:100px;}
+        75%  { left:0px; top:100px;}
+        100% { left:0px; top:0px;}
+      }
 </style>
+
   </head>
   <body>
     <!-- This will be for the general navigation bar with links -->
@@ -153,7 +171,8 @@ width: 100%;
   </div>
 
 <div class = "title-box">
-<h1> TahsanQR -- Quantum Robotics &#129302; </h1>
+<h1> TahsanQR -- Quantum Robotics <div class = "robot"> &#129302; </div>
+</div>> </h1>
 <h2> <u> Homepage </u> </h2>
   </div>
 
